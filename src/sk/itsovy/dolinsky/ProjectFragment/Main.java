@@ -5,7 +5,7 @@ package sk.itsovy.dolinsky.ProjectFragment;
  */
 public class Main {
 	public static void main(String[] args) {
-		Fragment f1 = new Fragment(32,48);
+	/*	Fragment f1 = new Fragment(32,48);
 		Fragment f2 = new Fragment(7,28);
 
 		System.out.println(f1.toString());
@@ -35,6 +35,17 @@ public class Main {
 		System.out.println(f6);
 		MyMath.sub(f1,f2);
 		math.sub(f1,f2);
+		System.out.println();
+		*/
+
+		Rectangle rectangle = new Rectangle(12,5);
+        System.out.println("Diagonale: " + rectangle.calcDiagonale());
+		rectangle.printRectangle();
+		rectangle.setCharacter('&');
+		rectangle.showRectangle();
+		rectangle.setFill(true);
+        rectangle.showRectangle();
+
 
 
 

@@ -14,10 +14,6 @@ public class Bank {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double convert(double amount, String code) {
         switch (code) {
             case "TRY" : amount *= 6.47; break;

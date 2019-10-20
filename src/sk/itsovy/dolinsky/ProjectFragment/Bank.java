@@ -28,7 +28,7 @@ public class Bank {
 
     public static double loan(double value, double interest, int months) {
         if (value > 0 && interest > 0 && months > 0) {
-            return (value * (interest / 100) + value) / months;
+            return (value * (interest / 100) + value) / months; //Github set different 
         } else {
             return -1;
         }

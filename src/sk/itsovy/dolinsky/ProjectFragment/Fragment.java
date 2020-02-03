@@ -18,7 +18,8 @@ public class Fragment {
 		numerator = other.getNumerator();
 		denominator = other.getDenominator();
 
-	}
+
+    }
 
 	public int getNumerator() {
 		return numerator;

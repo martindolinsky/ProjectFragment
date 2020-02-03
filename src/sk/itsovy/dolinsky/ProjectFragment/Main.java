@@ -1,5 +1,8 @@
 package sk.itsovy.dolinsky.ProjectFragment;
 
+import static sk.itsovy.dolinsky.ProjectFragment.Bank.loan;
+import static sk.itsovy.dolinsky.ProjectFragment.MyMath.random4;
+
 /**
  * @author Martin Dolinsky
  */
@@ -46,8 +49,21 @@ public class Main {
 		rectangle.setFill(true);
         rectangle.showRectangle();
 
+        System.out.println();
+        Bank bank = new Bank("Tatrabanka");
+        System.out.println("Output is different because of rate accuracy.");
+        System.out.println(bank.convert(120, "CHF"));
+        System.out.println(bank.convert(520, "USD"));
+        System.out.println(loan(1000, 4.5, 20));
+        System.out.println(loan(6000, 2.8, -36));
+        System.out.println();
+        loan(1000, 1, 1);
 
+        MyMath math = new MyMath();
+        System.out.println(math.reverseNumber(123));
 
-
+        for (int i = 0; i < 1000; i++) {
+            System.out.print(random4() + " ");
+        }
 	}
 }
